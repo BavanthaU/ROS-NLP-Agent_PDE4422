@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.bavantha.ripod_video"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+
+    //SeekBar
+    implementation 'com.github.alpbak:BoxedVerticalSeekBar:1.1.1'
+
+    // ROS
+    implementation "org.ros.rosjava_core:rosjava:0.3.6"
+    implementation "org.ros.rosjava_messages:diagnostic_msgs:1.12.7"
+    implementation 'org.ros.rosjava_messages:geometry_msgs:1.12.7'
+    implementation 'org.ros.rosjava_messages:nav_msgs:1.12.7'
+    implementation 'org.ros.rosjava_messages:std_msgs:0.5.11'
+    implementation 'org.ros.rosjava_messages:map_msgs:1.13.0'
+    implementation 'org.ros.rosjava_messages:sensor_msgs:1.12.7'
+    implementation 'org.ros.rosjava_bootstrap:message_generation:0.3.3'
+    implementation 'org.ros.android_core:android_core_components:0.4.0'
+    // Room
+    implementation "androidx.room:room-runtime:2.2.6"
+    annotationProcessor "androidx.room:room-compiler:2.2.6"
+
+    // Parsing
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // Open Street Maps (e.g. for GPS)
+    implementation 'org.osmdroid:osmdroid-android:6.1.6'
+
+    //recycler view
+    implementation 'com.github.ImaginativeShohag:Why-Not-Image-Carousel:v1.0.0'
+
+    //qr_pop up
+    implementation 'com.github.chathuralakmal:AndroidImagePopup:1.2.2'
+
+    //dialogflow
+    implementation 'io.kommunicate.sdk:kommunicateui:2.1.4'
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+    //qr generator
+    implementation 'com.google.zxing:core:3.3.0'
+}

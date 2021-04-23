@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#6200EE</color>
+    <!--<color name="colorPrimaryDark">#3700B3</color>-->
+    <color name="colorPrimaryDark">#002060</color>
+    <color name="colorPrimaryLight">#0071c1</color>
+    <color name="colorAccent">#0cb845</color>
+
+
+    <!--App Colors-->
+    <color name="orange">#F95009</color>
+    <color name="red">#AA0000</color>
+    <color name="light_gray">#D0D0D0</color>
+    <color name="gray">#B1B1B1</color>
+    <color name="gray1">#B1B1B4</color>
+    <color name="dark_gray">#6C6C6C</color>
+    <color name="lime_green">#32CD32</color>
+    <color name="white">#FFFFFF</color>
+    <color name="seek_background">#BEC1C3</color>
+    <color name="seek_active">#03A9F4</color>
+    <color name="blue">#0408FB</color>
+
+    <color name="applozic_theme_color_primary_dark" tools:override="true">#2D373E</color>
+</resources>
